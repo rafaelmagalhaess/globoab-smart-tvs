@@ -21,6 +21,19 @@ const GLOBO_AB = new GloboAbSdk();
 
 ## Utilização
 
+### Sortear experimentos:
+
+Para sortear 1 ou mais experimentos:
+
+```
+GLOBO_AB.requestVariations(arrayExperiments, registerImpression);
+```
+
+Parâmetro | Tipo | Descrição |
+--- | --- | ---
+arrayExperiments | Array de Strings | Array de strings com os IDs dos experimentos que desejamos sortear
+registerImpression | Boolean | `true` para registrar uma impressão para cada experimento sorteado<br> `false` para não registrar impressão
+
 ### Registrar impressão
 
 Para registrar uma impressão:
